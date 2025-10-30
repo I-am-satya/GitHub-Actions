@@ -26,3 +26,4 @@ jobs:
       run: |
         cd src
         python -m pytest addition.py
+        python hello.py
