@@ -22,6 +22,7 @@ jobs:
       run: |
         cd src
         pytest -v > app_result.log || true
+        cat app_result.log
     - name: upload test result log
       uses: actions/upload-artifact@v4
       with:
