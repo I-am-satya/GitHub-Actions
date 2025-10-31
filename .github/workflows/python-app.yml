@@ -21,4 +21,4 @@ jobs:
     - name: Run tests
       run: |
         cd src
-        pytest src -v --maxfail=1 --disabled-warnings
+        pytest
