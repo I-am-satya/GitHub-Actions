@@ -23,7 +23,7 @@ jobs:
         cd src
         pytest -v > app_result.log || true
     - name: upload test result log
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: pytest-results
         path: src/app_result.log
