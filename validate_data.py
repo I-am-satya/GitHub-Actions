@@ -6,7 +6,7 @@ def validate_data(file_path="synthetic_data.csv"):
   except FileNotFoundError:
     print("X synthetic_data.csv not found. Please run generate_data.py first.")
     return
-  expected_columns={'Age', 'Income', 'Purchased'}
+  expected_columns={'Name','Email','Phone number','Age', 'Income', 'Purchased'}
   
   actual_columns= set(df.columns)
   
