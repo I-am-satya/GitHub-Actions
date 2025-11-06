@@ -6,7 +6,7 @@ def generate_synthetic_data(num_samples=1000, seed=42):
   np.random.seed(seed)
   # Generate synthetic data
 
-  ages np.random.randint(18, 70, size=num_samples)
+  ages = np.random.randint(18, 70, size=num_samples)
   
   income = np.random.normal(loc=50000, scale=15000, size=num_samples).astype(int)
   
