@@ -34,5 +34,5 @@ def validate_data(file_path="synthetic_data.csv"):
   
   print(df.describe())
 
-if __name__ ="__main__": 
+if __name__=="__main__": 
   validate_data()
