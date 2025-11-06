@@ -19,7 +19,6 @@ def generate_synthetic_data(num_samples=1000, seed=42):
   
   purchased = np.random.binomial (1, purchase_probability)
 
-
   #Create DataFrame
 
   df = pd.DataFrame({
