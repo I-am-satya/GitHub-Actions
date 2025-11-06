@@ -8,7 +8,7 @@ def validate_data(file_path="synthetic_data.csv"):
     return
   expected_columns={'Age', 'Income', 'Purchased'}
   
-  actual columns= set(df.columns)
+  actual_columns= set(df.columns)
   
   print(" Column validation:")
   
