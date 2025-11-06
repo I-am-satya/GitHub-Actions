@@ -19,6 +19,7 @@ jobs:
         pip install flask pytest
         pip install pandas
         pip install numpy
+        pip install faker
 
     - name: Run tests
       run: |
