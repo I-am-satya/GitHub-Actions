@@ -2,7 +2,7 @@ import pandas as pd
 
 def validate_data(file_path="synthetic_data.csv"): 
   try:
-    df pd.read.csv(file_path) 
+    df= pd.read.csv(file_path) 
   except FileNotFoundError:
     print("X synthetic_data.csv not found. Please run generate_data.py first.")
     return
