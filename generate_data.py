@@ -40,5 +40,5 @@ def main():
 
   print("Synthetic data saved to 'synthetic_data.csv'.")
 
-if_name __main__":
+if_name "__main__":
   main()
