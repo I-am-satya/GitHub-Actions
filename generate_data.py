@@ -33,6 +33,7 @@ def main():
   print("Synthetic data preview:")
 
   print(df.head())
+  print("Data Shape : ", df.shape())
 
   #Save to CSV
 
