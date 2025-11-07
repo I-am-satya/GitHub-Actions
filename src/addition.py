@@ -1,8 +1,4 @@
-#addition
-now = datetime.now()
-print("Date and time when test case run ")
-print(now.strftime("%Y-%m-%d %H:%M:%S))
-                   
+#addition             
 def add(a, b):
     return a + b
 
