@@ -2,7 +2,8 @@ name: My First GitHub Actions
 
 on:
   schedule:
-    -cron: '*/2 * * * *'
+    -cron: "*/5 * * * *"
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
