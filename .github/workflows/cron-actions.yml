@@ -2,7 +2,7 @@ name: My First GitHub Actions
 
 on:
   schedule:
-    -cron: '* * * * *'
+    -cron: '*/2 * * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
