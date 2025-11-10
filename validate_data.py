@@ -18,21 +18,6 @@ def validate_data(file_path="synthetic_data.csv"):
   
   print("Match:", expected_columns == actual_columns)
   
-  print("\n Data types:") 
-  
-  print(df.dtypes)
-  
-  print("\n Value ranges:")
-  
-  print("Age:", df['Age'].min(), "-", df['Age'].max()) 
-  
-  print("Income:", df['Income'].min(), "-", df['Income'].max()) 
-  
-  print("Purchased values:", df['Purchased'].unique())
-  
-  print("\n Basic statistics:")
-  
-  print(df.describe())
 
 if __name__=="__main__": 
   validate_data()
