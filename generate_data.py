@@ -39,7 +39,6 @@ def main():
 
   print(df.head())
   print("Data Shape : ", df.shape)
-
   #Save to CSV
 
   df.to_csv('synthetic_data.csv', index=False)
