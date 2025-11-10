@@ -1,7 +1,6 @@
 from faker import Faker
 import numpy as np
 import pandas as pd
-import re
 
 def generate_synthetic_data(num_samples=1000, seed=42):
   np.random.seed(seed)
