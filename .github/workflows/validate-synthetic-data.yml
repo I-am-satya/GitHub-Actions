@@ -1,9 +1,6 @@
 name: Validate Synthetic Data Script
 
-on:
-  schedule:
-    - cron: "*/5 * * * *"
-  workflow_dispatch:
+on: [push,pull_request]
     
 jobs:
   build:
