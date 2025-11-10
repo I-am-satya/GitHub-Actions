@@ -17,7 +17,8 @@ def validate_data(file_path="synthetic_data.csv"):
   print("Actual:", actual_columns)
   
   print("Match:", expected_columns == actual_columns)
-  
+
+  print("rows and columns", df.shape)
 
 if __name__=="__main__": 
   validate_data()
