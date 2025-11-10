@@ -21,17 +21,18 @@ jobs:
         pip install numpy
         pip install faker
 
-    - name: Run tests
+    - name: Run generation code
       run: |
         python generate_data.py
-        python validate_data.py
         
     - name: Generate data files as artifact
       uses: actions/upload-artifact@v4
       with:
         name: synthetic_data
-        path: /
-    - name: checkout output-files
+        path: synthetic_data.csv
+        
+    - name: Run Validation code
       run: |
-       ls
+        python validate_data.py
+        
       
