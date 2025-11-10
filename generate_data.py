@@ -13,7 +13,7 @@ def generate_synthetic_data(num_samples=1000, seed=42):
   phones = [faker.phone_number() for _ in range(num_samples)]
   ages = np.random.randint(18, 70, size=num_samples)
   
-  income = np.random.normal(loc=50000, scale=15000, size=num_samples).astype(int)
+  income = np.random.randint(50000, 450000, size=num_samples)
     
   purchased = np.random.randint(0,10,size=num_samples)
   #Create DataFrame
