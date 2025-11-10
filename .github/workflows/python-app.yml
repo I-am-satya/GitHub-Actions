@@ -1,7 +1,10 @@
 name: Test app
 
-on: [push,pull_request]
-
+on:
+  schedule:
+    - cron: "* 12 * * *"
+  workflow_dispatch:
+  
 jobs:
   build:
     runs-on: ubuntu-latest
