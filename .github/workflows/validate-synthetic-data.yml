@@ -25,4 +25,12 @@ jobs:
       run: |
         python generate_data.py
         python validate_data.py
-
+        
+    - name: Generate data files as artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: synthetic_data
+    - name: checkout output-files
+      run: |
+       ls
+      
