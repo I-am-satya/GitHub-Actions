@@ -1,7 +1,10 @@
 name: My First GitHub Actions
 
-on: [push]
-
+on:
+  schedule:
+    - cron: "* * 12 * *"
+  workflow_dispatch:
+  
 jobs:
   build:
     runs-on: ubuntu-latest
